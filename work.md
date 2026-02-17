@@ -1,0 +1,6 @@
+- server start kr dia
+- phle db connect kr le
+- app schema bna lete hai user ka, and fir usska model bhi
+- user register, user login, user logout
+- post creation ka schema bnana hai
+- api bnana hai post create ka 
