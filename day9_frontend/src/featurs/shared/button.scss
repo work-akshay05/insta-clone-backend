@@ -1,0 +1,11 @@
+button{
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    transition: all 0.1s ease-in-out;
+    &:active{
+        transform: scale(0.8);
+    }
+}
+.login{
+    background-color: rgb(248, 90, 90);
+}
