@@ -4,3 +4,24 @@
 - user register, user login, user logout
 - post creation ka schema bnana hai
 - api bnana hai post create ka 
+- edge collection ka use krke follow and following krna hai ,phle usska schema bnana hai
+- exploration and explotation padhna hai,
+- adaptive learning  parameters pe bhi change, distance based approaches (lagake fuse krna hai),
+- do algo mai jaise change kra 
+- data cleaning (gausian filtering)
+- normalization
+- image enhencement->clahe, he, ahe(inhe bas study krna hai ye kaafi old ho gaye hai)
+- ROI-> canny, static and dynamic
+- data augmentation =>gan based approach
+- koi chij credit score mai use hui hai but hum use biometric mai laga skte hai to uss mai laga denge
+- feature extraction method
+- feature selection method
+ye preprocessing hai inn mai se hi kissi mai daal skte hai innovation
+
+- ojs.aaai.org=>ye research paper mai dekh skte hai ki unnhone kya use kra
+- ieee, springer, acm ke paper kaafi ache hote hai unnko refer krna hai
+- gernal ke lie jaana chahiye
+- core innovation points ko divide krna hai 
+- document bnana hai ki humne kya kya refer kra hai and kya kya dekha hai uss mai 
+- dataset vahi use krne hai jo jyada see jyada use ho raha ho humare case mai,
+- 

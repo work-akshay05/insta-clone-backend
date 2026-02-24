@@ -24,7 +24,7 @@ const userRegister=async (req,res)=>{
         userName,email,password:hash
     })
     const token=jwt.sign(
-        {id:user._id},
+        {id:user._id,userName},
         process.env.JWT_SECRET,
         {expiresIn:"1d"}
     )
@@ -63,7 +63,10 @@ const userLogin=async (req,res)=>{
         })
     }
     const token=await jwt.sign(
-        {id:userExsist._id},
+        {
+            id:userExsist._id,
+            userName:userName
+        },
         process.env.JWT_SECRET,
         {expiresIn:"1d"}
     )

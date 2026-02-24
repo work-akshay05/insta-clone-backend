@@ -5,6 +5,7 @@ const multer=require('multer')
 const cookieParser=require('cookie-parser');
 const imagekit=require('@imagekit/nodejs');
 const {toFile}=require('@imagekit/nodejs');
+
 const client=new imagekit({
     privateKey:process.env['IMAGEKIT_PRIVATE_KEY']
 });
@@ -60,9 +61,23 @@ const verifyPost=async (req,res)=>{
         })
     }
 }
+const likecontroller=async (req,res)=>{
+    const postId=req.params.postid;
+    const username=await req.user.userName;
+
+    const liked=await likeModel.create({
+        postId,
+        likedby:username
+    })
+    res.status(200).json({
+        message:"you liked this post",
+        liked
+    })
+}
 
 module.exports={
     createPost,
     findPosts,
-    verifyPost
+    verifyPost,
+    likecontroller
 }

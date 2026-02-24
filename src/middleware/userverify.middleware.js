@@ -12,6 +12,18 @@ async function identifer(req,res,next){
         })
     }
 
+    const token2=req.headers.Authorization;
+    if(decoded==null){
+        try{
+            decoded=jwt.verify(token2,process.env.JWT_SECRET);
+        }
+        catch{
+            return res.status(400).json({
+                message:"kuch milega tab to btaunga ya saale kahi tu fake to nhi",
+            })
+        }
+    }
+
     req.user=decoded;
     next()
 }
